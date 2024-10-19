@@ -1,0 +1,206 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(24, 24, 24);
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+}
+
+/* Poppins font */
+@font-face {
+  font-family: Poppins;
+  src: url('/fonts/poppins/Poppins-Thin.ttf');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('/fonts/poppins/Poppins-ExtraLight.ttf');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('/fonts/poppins/Poppins-Light.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('/fonts/poppins/Poppins-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('/fonts/poppins/Poppins-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('/fonts/poppins/Poppins-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('/fonts/poppins/Poppins-Bold.ttf');
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: Poppins;
+  src: url('/fonts/poppins/Poppins-ExtraBold.ttf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('/fonts/poppins/Poppins-Black.ttf');
+  font-weight: 900;
+}
+
+/*LibreBaskerville Font*/
+@font-face {
+  font-family: Libre;
+  src: url('/fonts/libre/LibreBaskerville-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Libre;
+  src: url('/fonts/libre/LibreBaskerville-Bold.ttf');
+  font-weight: 600;
+}
+
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  --bg: rgb(245, 245, 245);
+  --text: rgb(40, 40, 40);
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  width: 100%;
+  padding: 0 6%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px rgb(0, 0, 0, .1);
+  font-size: .88rem;
+} 
+
+.navbar > div:first-child {
+  font-weight: 600;
+  font-family: Libre;
+}
+
+.navbar > div:nth-child(2) {
+  display: flex;
+  gap: 2rem;
+  font-size: .66rem;
+  font-weight: 500;
+}
+
+.navbar > div:last-child {
+  font-weight: 600;
+  font-size: .72rem;
+}
+
+.footer {
+  width: calc(100% - 16px);
+  margin-left: 8px;
+  margin-bottom: 8px;
+  height: 400px;
+  background-color: var(--text);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  color: var(--bg);
+  padding: 40px 60px;
+  gap: 8px;
+}
+
+.footer > span:first-child {
+  font-size: .72rem;
+  font-weight: 600;
+}
+
+.footer > div:nth-child(2) {
+  font-size: 6rem;
+  font-family: Libre;
+}
+
+.footer > div:nth-child(2) > span {
+  font-style: italic;
+}
+
+.footer > div:nth-child(3) {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer > div:nth-child(3) > span:first-child {
+  font-size: .8rem;
+  text-decoration: underline;
+}
+
+.footer > div:nth-child(3) > div:last-child {
+  display: flex;
+  font-size: .72rem;
+  gap: 2rem;
+}
+
+.footer > div:nth-child(3) > div:last-child > span {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-btm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 60px;
+}
+
+.footer-btm-cnt {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: .66rem;
+  font-weight: 600;
+}
+
+.footer-btm-cnt > div:first-child {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-btm-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--bg);
+}
