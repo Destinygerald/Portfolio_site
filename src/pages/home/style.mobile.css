@@ -57,5 +57,16 @@
 
 	.work-cnt {
 		grid-template-columns: repeat(1, 1fr);
-	}	
+	}
+
+	.work-card-img {
+		height: auto;
+		width: 100%;
+	}
+
+	.work-card-img > img {
+		width: auto;
+		max-width: 100%;
+		height: 100%;
+	}
 }

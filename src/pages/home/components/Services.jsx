@@ -17,7 +17,7 @@ function ServicesCard ({ no, title, image, content }) {
 			<div className='services-card-cnt'>
 				<div className='services-card-cnt-top'>
 					<span>{title}</span>
-					<button onClick={toggleOpen} className={!open ? 'services-card-btn': 'services-card-btn-open'}>See More</button>
+					<button onClick={toggleOpen} className={!open ? 'services-card-btn': 'services-card-btn-open'}>See { open ? 'Less' : 'More'}</button>
 				</div>
 
 				{
@@ -25,7 +25,7 @@ function ServicesCard ({ no, title, image, content }) {
 					&&
 					<div className='services-card-cnt-btm'>
 						<div>
-							<img />
+							<img src={image} />
 						</div>
 
 						<span>
@@ -56,10 +56,10 @@ function ServicesTop () {
 function ServicesBtm () {
 	return (
 		<div className='services-btm'>
-			<ServicesCard no='01' title='Web Development' content='Lorem ipsum dolor si amet lori i dont even understand one shit that this lorem ipsum means. I mean what language is it sef' />
-			<ServicesCard no='02' title='Design System' content='Lorem ipsum dolor si amet lori i dont even understand one shit that this lorem ipsum means. I mean what language is it sef' />
+			<ServicesCard no='01' title='Web Development' content='Building web apps and websites with tools like React and Nodejs' />
+			<ServicesCard no='02' title='Design System' content='Engage in the Process of planning the layout of a system.' />
 			<ServicesCard no='03' title='Testing' content='Lorem ipsum dolor si amet lori i dont even understand one shit that this lorem ipsum means. I mean what language is it sef' />
-			<ServicesCard no='04' title='Web Animations' content='Lorem ipsum dolor si amet lori i dont even understand one shit that this lorem ipsum means. I mean what language is it sef' />
+			<ServicesCard no='04' title='Web Animations' content='' />
 		</div>
 	)
 }

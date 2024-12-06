@@ -303,6 +303,21 @@
 	height: 240px;
 	background-color: rgb(230, 230, 230);
 	border-radius: 8px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+
+.work-card-img > img {
+	width: 100%;
+	filter: brightness(.6);
+	position: relative;
+	transition: transform 2s;
+}
+
+.work-card-img:hover > img {
+	/*width: 120%;*/
+	transform: scale(1.2);
 }
 
 .work-card-cnt {
