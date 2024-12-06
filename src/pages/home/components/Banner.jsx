@@ -2,10 +2,6 @@ import '../style.css'
 import '../style.mobile.css'
 import { FaXTwitter, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa6'
 import { useEffect } from 'react'
-import img1 from '/images/img3.jpeg'
-import img2 from '/images/img4.jpeg'
-import img3 from '/images/img5.jpeg'
-import img4 from '/images/img6.jpeg'
 
 function BannerMain () {
 	return (
@@ -63,7 +59,7 @@ export function Banner () {
 
 			<div className='banner-carousel'>
 				<div className='banner-carousel-inner'>
-					<div>
+					{/*<div>
 						<img src={img1} />
 					</div>
 
@@ -77,7 +73,7 @@ export function Banner () {
 
 					<div>
 						<img src={img4} />
-					</div>
+					</div>*/}
 				</div>
 			</div>
 		</div>
