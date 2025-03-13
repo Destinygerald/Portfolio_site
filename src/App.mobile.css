@@ -1,0 +1,27 @@
+@media (max-width: 600px) {
+	.navbar > div:nth-child(2) {
+		display: none;
+	}
+
+	.navbar > div:last-child {
+		font-size: .6rem;
+	}
+
+	.footer {
+		padding: 40px;
+		height: 320px;
+	}
+
+	.footer > div:nth-child(2) {
+		font-size: 3rem;
+	}
+
+	.footer > div:nth-child(3) {
+		margin-top: 32px;
+		align-items: center;
+	}
+
+	.footer-btm {
+		display: none;
+	}
+}
