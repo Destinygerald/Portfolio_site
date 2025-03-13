@@ -1,12 +1,33 @@
 import './App.css'
-import { Routes, Route, useNavigate } from 'react-router-dom'
+import { Routes, Route, useLocation, useNavigate } from 'react-router-dom'
 // Components
 import { Navbar } from './Navbar.jsx'
 import { Footer } from './Footer.jsx'
 // Pages
 import HomePage from './pages/home/Page.jsx'
+import { useEffect } from 'react'
 
 function App() {
+
+  const { state } = useLocation();
+  const navigate = useNavigate()
+  const { targetId } = state || {};
+
+  useEffect(() => {
+    const el = document.getElementById(targetId);
+    if (el) {
+      el.scrollIntoView();
+    }
+  }, [targetId]);
+
+  useEffect(() => {
+    navigate("/", { state: { targetId: 'page-top' } });
+
+    const el = document.getElementById(targetId);
+    if (el) {
+      el.scrollIntoView();
+    }
+  }, [])
 
   return (
     <div className='app'>

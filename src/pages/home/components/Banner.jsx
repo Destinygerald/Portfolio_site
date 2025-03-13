@@ -9,7 +9,7 @@ function BannerMain () {
 	
 
 	return (
-	<div className='banner-main'>
+	<div className='banner-main' id='about'>
 		<div className='banner-main-top'>
 			<div className='banner-main-top-left'>
 				<span>Hi, I'm Destiny</span>

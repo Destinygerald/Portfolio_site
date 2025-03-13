@@ -6,6 +6,7 @@
 
 html {
   background-color: rgb(24, 24, 24);
+  scroll-behavior: smooth;
 }
 
 html, body, #root {
@@ -94,6 +95,8 @@ html, body, #root {
   font-family: Poppins;
   display: flex;
   flex-direction: column;
+
+  /* transition: y .8s; */
 }
 
 .navbar {
@@ -122,6 +125,10 @@ html, body, #root {
 .navbar > div:last-child {
   font-weight: 600;
   font-size: .72rem;
+}
+
+.nav-list > span {
+  cursor: pointer;
 }
 
 .footer {

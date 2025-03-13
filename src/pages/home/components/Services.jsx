@@ -70,7 +70,7 @@ function ServicesBtm () {
 
 export function Services () {
 	return (
-		<div className='services'>
+		<div className='services' id="services">
 			<ServicesTop />
 			<ServicesBtm />
 		</div>

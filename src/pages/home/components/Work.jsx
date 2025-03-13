@@ -34,7 +34,7 @@ function WorkCard ({ img, content, title, year, link }) {
 
 export function Work () {
 	return (
-		<div className='work'>
+		<div className='work' id="work">
 			<div className='work-top'>
 				<span>Work</span>
 				<span>
